@@ -1,0 +1,34 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+
+*** Results Summary for CNN Model Architecture ALEXNET ***
+N Images            :   4
+N Dog Images        :   2
+N Not-Dog Images    :   2
+ 
+pct_match           : 25.00%
+pct_correct_dogs    : 100.00%
+pct_correct_breed   : 0.00%
+pct_correct_notdogs : 100.00%
+
+INCORRECT Dog Breed Assignment:
+Real:                        dog   Classifier:          saluki, gazelle hound
+Real:                        dog   Classifier:          saluki, gazelle hound
+
+** Total Elapsed Runtime: 0:0:0
+
+N Not-Dog Images    :   2
+ 
+pct_match           : 25.00%
+pct_correct_dogs    : 100.00%
+pct_correct_breed   : 0.00%
+pct_correct_notdogs : 100.00%
+
+INCORRECT Dog Breed Assignment:
+Real:                        dog   Classifier:          saluki, gazelle hound
+Real:                        dog   Classifier:          saluki, gazelle hound
+
+** Total Elapsed Runtime: 0:0:0

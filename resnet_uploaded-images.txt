@@ -1,0 +1,28 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = resnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                     Dog_01.jpg  label:                        dog
+ 2 key:                     Dog_02.jpg  label:                        dog
+ 3 key:              Dessert_Spoon.jpg  label:                    dessert
+ 4 key:                     Rabbit.jpg  label:                           
+
+
+*** Results Summary for CNN Model Architecture RESNET ***
+N Images            :   4
+N Dog Images        :   2
+N Not-Dog Images    :   2
+ 
+pct_match           : 25.00%
+pct_correct_dogs    : 100.00%
+pct_correct_breed   : 0.00%
+pct_correct_notdogs : 100.00%
+
+INCORRECT Dog Breed Assignment:
+Real:                        dog   Classifier:          saluki, gazelle hound
+Real:                        dog   Classifier:          saluki, gazelle hound
+
+** Total Elapsed Runtime: 0:0:0

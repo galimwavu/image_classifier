@@ -1,0 +1,25 @@
+Command Line Arguments:
+     dir = pet_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+
+*** Results Summary for CNN Model Architecture ALEXNET ***
+N Images            :  40
+N Dog Images        :  30
+N Not-Dog Images    :  10
+ 
+pct_match           : 75.00%
+pct_correct_dogs    : 100.00%
+pct_correct_breed   : 80.00%
+pct_correct_notdogs : 100.00%
+
+INCORRECT Dog Breed Assignment:
+Real:             boston terrier   Classifier:                        basenji
+Real:           golden retriever   Classifier:           afghan hound, afghan
+Real:                     beagle   Classifier:               english foxhound
+Real:             great pyrenees   Classifier:                         kuvasz
+Real:                     beagle   Classifier:  walker hound, walker foxhound
+Real:           golden retriever   Classifier:                tibetan mastiff
+
+** Total Elapsed Runtime: 0:0:3
