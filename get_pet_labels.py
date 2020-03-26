@@ -50,20 +50,20 @@ def get_pet_labels(image_dir):
     #traversing through the filenames list
     for index in range(0,len(filenames_list),1):
         pet_name = ""
-        #set the pet name to lower case
-        pet_lower = filenames_list[index].lower()
-        #split the pet_lower using the _
-        word_pet_list = pet_lower.split("_")
-        for word in word_pet_list:
-            if word.isalpha():
-                pet_name += word + " "
-        pet_name = pet_name.strip()
-#         print (pet_name)
-        pet_labels.append(pet_name)
-#     print (len(pet_labels) )
-#     print (len(filenames_list))
+        if filenames_list[index].startswith('.'):
+            return
+        else:
+            #set the pet name to lower case
+            pet_lower = filenames_list[index].lower()
+            #split the pet_lower using the _
+            word_pet_list = pet_lower.split("_")
+            for word in word_pet_list:
+                if word.isalpha():
+                    pet_name += word + " "
+            pet_name = pet_name.strip()
+            pet_labels.append(pet_name)
+
     for index in range(0,len(filenames_list),1): 
-#         print(pet_labels[3])
         if filenames_list[index] not in results_dic:
             results_dic[filenames_list[index]] = [pet_labels[index]]
         else:
