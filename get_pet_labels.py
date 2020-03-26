@@ -51,7 +51,7 @@ def get_pet_labels(image_dir):
     for index in range(0,len(filenames_list),1):
         pet_name = ""
         if filenames_list[index].startswith('.'):
-            return
+            continue
         else:
             #set the pet name to lower case
             pet_lower = filenames_list[index].lower()
